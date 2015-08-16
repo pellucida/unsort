@@ -33,29 +33,4 @@ them to a subnet merging program for testing.
 	done
 	) | unsort | subnet_merge
 
-# Output should be 10.1.0.0/16
-
-BUGS
-The output is not uniformly distributed.
-ALGORITHM
-Probably too simplistic for anything other than simple testing
-viz
-Connect N of the following processes in a pipeline
-
-	while more input :
-		read line from input
-		flip coin
-		if heads :
-			write line to output
-		otherwise
-			append line to temporary file
-	copy contents of temporary file to output
-	exit
-
-where N is log2(maximum-lines-expected)
-
-SEE ASLO
-	shuf(1) and sort(1) [gnu core-utils]
-
-noting the usage
-	sort --random-sort 
+Output should be 10.1.0.0/16
