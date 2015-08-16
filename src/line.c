@@ -5,6 +5,8 @@
 //		http://creativecommons.org/publicdomain/zero/1.0/legalcode
 //	Author:	James Sainsbury
 //		toves@sdf.lonestar.org
+//
+//	Dynamically resizing line buffer
 */
 # include	<stdio.h>
 # include	<stdlib.h>
