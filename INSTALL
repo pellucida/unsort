@@ -1,0 +1,16 @@
+unsort-0.1
+
+Change directory to the src folder
+edit the Makefile to reflect whether you have
+
+clock_gettime() 	-DHAVE_CLOCK_GETTIME=1
+
+or failing that whether you have
+
+getpid()		-DHAVE_GETPID=1
+
+This is to adequately seed random(). The one second resolution of time() means
+if a number of unsort processes are started in quick succession the output from
+random() will be the same for each of those processes.
+As a consequence if these unsort processes are are started with the same input
+the output from each will be the same.
