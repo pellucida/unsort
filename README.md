@@ -32,7 +32,7 @@ them to a subnet merging program for testing.
 	done
 	) | unsort | subnet_merge
 
-Output should be 10.1.0.0/16
+ # Output should be 10.1.0.0/16
 
 BUGS
 The output is not uniformly distributed.
