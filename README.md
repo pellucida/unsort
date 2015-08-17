@@ -1,6 +1,7 @@
-# unsort
-unsort (permute) a text file
-DESCRIPTION
+## unsort
+permute the lines of a text file
+
+#### DESCRIPTION
 
 	unsort [file]
 
@@ -31,13 +32,12 @@ them to a subnet merging program for testing.
 		done
 	done
 	) | unsort | subnet_merge
+	# Output should be 10.1.0.0/16
 
- # Output should be 10.1.0.0/16
-
-BUGS
+#### BUGS
 The output is not uniformly distributed.
 
-ALGORITHM
+#### ALGORITHM
 Probably too simplistic for anything other than simple testing
 viz
 Connect N of the following processes in a pipeline
@@ -54,8 +54,8 @@ Connect N of the following processes in a pipeline
 
 where N is log2(maximum-lines-expected)
 
-SEE ASLO
-	shuf(1) and sort(1) [gnu core-utils]
+#### SEE ASLO
+`shuf(1)` and `sort(1)` [gnu core-utils](http://www.gnu.org/software/coreutils/coreutils.html)
 
 noting the usage
 	sort --random-sort 
