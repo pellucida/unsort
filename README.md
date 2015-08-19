@@ -54,8 +54,14 @@ Connect N of the following processes in a pipeline
 
 where N is log2(maximum-lines-expected)
 
-#### SEE ASLO
+#### SEE ALSO
 `shuf(1)` and `sort(1)` [gnu core-utils](http://www.gnu.org/software/coreutils/coreutils.html)
 
 noting the usage
 	sort --random-sort 
+#### LICENSE
+Creative Commons CC0 [http://creativecommons.org/publicdomain/zero/1.0/legalcode]
+(http://creativecommons.org/publicdomain/zero/1.0/legalcode)
+
+#### AUTHOR
+[James Sainsbury](toves@sdf.lonestar.org)
